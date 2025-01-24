@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,6 +15,7 @@ public class Player : MonoBehaviour, IGameStateListener
         Clear,
         Reset,
     }
+    public Vector3 BoatPos;
 
     SimpleState<State> state = new(State.None);
 
