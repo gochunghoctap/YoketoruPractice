@@ -1,20 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InputController : MonoBehaviour
 {
-     /// <summary>
-     /// 対応する入力デバイスのインスタンスを定義
-     /// </summary>
-     IInput[] inputs = {
- 
-     };
- 
     /// <summary>
-     /// 更新処理を呼び出す。
+    /// 対応する入力デバイスのインスタンスを定義
     /// </summary>
-     public void Update()
+    IInput[] inputs =
+   {
+        //new KeyInputBench(),
+        //new GamePadInput(),
+        //new DevMouseInput(),
+    };
+
+    /// <summary>
+    /// 更新処理を呼び出す。
+    /// </summary>
+    public void Update()
      {
  
      }
